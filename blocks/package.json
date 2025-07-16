@@ -1,0 +1,33 @@
+{
+	"name": "blocks",
+	"version": "0.1.0",
+	"description": "An interactive block with the Interactivity API",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"wpbuild": "wp-scripts build --experimental-modules",
+		"build": "npm-run-all --sequential wpbuild tailwindbuild",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"tailwindbuild": "npx @tailwindcss/cli -i ./src/style.scss -o ./build/style-index.css --minify",
+		"tailwindwatch": "npx @tailwindcss/cli -i ./src/style.scss -o ./build/style-index.css --watch --minify",
+		"wpstart": "wp-scripts start --experimental-modules",
+		"start": "npm-run-all --parallel wpstart tailwindwatch"
+	},
+	"files": [
+		"[^.]*"
+	],
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.11",
+		"@wordpress/interactivity": "^6.26.0",
+		"npm-run-all": "^4.1.5",
+		"tailwindcss": "^4.1.11"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.19.0"
+	}
+}

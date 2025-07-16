@@ -1,0 +1,12 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+
+.wp-block-warroom-warroom {
+  @import "tailwindcss/preflight.css" layer(base);
+  @import "tailwindcss/utilities.css" layer(utilities);
+
+  .is-red{
+    color: #e02f23!important;
+  }
+}
