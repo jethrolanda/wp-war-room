@@ -4,7 +4,7 @@
  * Plugin Name: WP War Room
  * Description: WP War Room
  * Version: 1.0
- * Author: Jethrolanda
+ * Author: Jethro Landa
  * Author URI: https://jethrolanda.com/
  * Text Domain: wp-war-room
  * Domain Path: /languages/

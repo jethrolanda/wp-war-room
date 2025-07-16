@@ -22,7 +22,7 @@ class WP_War_Room
 	public $rest;
 	public $hubspot;
 	public $callrail;
-	public $googleads;
+	// public $googleads;
 	public $settings;
 
 	const VERSION = '1.0';
@@ -48,7 +48,7 @@ class WP_War_Room
 		// $this->rest = WPWR\Plugin\Rest::instance();
 		$this->hubspot = WPWR\Plugin\Hubspot::instance();
 		$this->callrail = WPWR\Plugin\Callrail::instance();
-		$this->googleads = WPWR\Plugin\Googleads::instance();
+		// $this->googleads = WPWR\Plugin\Googleads::instance();
 		$this->settings = WPWR\Plugin\Settings::instance();
 
 		// Register Activation Hook
